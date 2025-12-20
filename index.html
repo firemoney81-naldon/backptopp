@@ -1,23 +1,295 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  
+  <title>아직도 월 2만원 넘게 내나 커피 한 잔 값으로 끝내는 운전자보험 리스트</title>
+
+
+
+  
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "운전자보험과 자동차보험의 차이는 무엇인가요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "자동차보험은 상대방의 피해를 보상하는 민사적 책임 위주이며, 운전자보험은 나의 형사적/행정적 책임(벌금, 합의금, 변호사비)을 보장합니다."
+        }
+      }]
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --primary-soft: #e3f2fd;
+            --secondary-soft: #f1f8e9;
+            --accent-soft: #fff3e0;
+            --text-main: #2c3e50;
+            --card-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: var(--card-shadow);
+        }
+
+        header h1 { margin: 0; font-size: 2.5rem; letter-spacing: -1px; }
+        header p { opacity: 0.9; font-weight: 300; }
+
+        .category-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .category-card {
+            background: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: var(--card-shadow);
+            border-top: 5px solid;
+        }
+
+        .cat-1 { border-top-color: #ff8a80; background-color: #fff9f9; }
+        .cat-2 { border-top-color: #81d4fa; background-color: #f1faff; }
+        .cat-3 { border-top-color: #a5d6a7; background-color: #f3fdf3; }
+        .cat-4 { border-top-color: #ffcc80; background-color: #fffbf5; }
+        .cat-5 { border-top-color: #ce93d8; background-color: #fbf5fd; }
+        .cat-6 { border-top-color: #90caf9; background-color: #f5f9ff; }
+        .cat-7 { border-top-color: #b0bec5; background-color: #fcfdfe; }
+
+        .category-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #333;
+            display: flex;
+            align-items: center;
+        }
+
+        .link-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .link-item {
+            margin-bottom: 12px;
+            transition: transform 0.2s ease;
+        }
+
+        .link-item a {
+            text-decoration: none;
+            display: block;
+            padding: 12px;
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            color: #444;
+            transition: all 0.3s ease;
+        }
+
+        .link-item a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-color: #2575fc;
+        }
+
+        .link-item .title {
+            font-weight: 700;
+            display: block;
+            font-size: 1.05rem;
+            margin-bottom: 4px;
+            color: #2575fc;
+        }
+
+        .link-item .desc {
+            font-size: 0.85rem;
+            color: #666;
+            line-height: 1.4;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            .category-section { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>아직도 월 2만원 넘게 내나 커피 한 잔 값으로 끝내는 운전자보험 리스트</h1>
+    </header>
+
+    <div class="category-section" id="content-grid">
+        </div>
+
+    <section style="background: white; padding: 30px; border-radius: 15px; margin-top: 20px; box-shadow: var(--card-shadow);">
+        <h3>💡 왜 운전자보험인가요?</h3>
+        <p>자동차보험이 '타인을 위한 배려'라면, 운전자보험은 '나를 위한 방어권'입니다. 12대 중과실 사고 시 발생하는 막대한 형사합의금과 변호사 선임비용, 이제는 선택이 아닌 필수입니다.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Driver Insurance Insight. All rights reserved.</p>
+    </footer>
+</div>
+
+<script>
+    const rawData = [
+        { t: "운전자보험 비교사이트", u: "https://bohumofdrivera.withusdone.com", d: "세상 모든 보험사의 견적을 한곳에서! 내 지갑을 지키는 가장 빠른 지름길입니다." },
+        { t: "운전자보험 보장내용", u: "https://bohumofdriverb.withusdone.com", d: "복잡한 약관은 NO! 핵심 보장만 콕 집어 설명해드리는 마법의 가이드입니다." },
+        { t: "운전자보험 추천", u: "https://bohumofdriverc.withusdone.com", d: "수천 명의 운전자가 선택한 베스트셀러 플랜, 이유 있는 인기를 확인하세요." },
+        { t: "운전자보험 보상", u: "https://bohumofdriverd.withusdone.com", d: "사고 후 당황하지 마세요. 든든한 보상이 당신의 일상을 빠르게 복구해드립니다." },
+        { t: "운전자보험 비교", u: "https://bohumofdrivere.withusdone.com", d: "A사와 B사, 어디가 더 유리할까? 1분 만에 끝내는 초간단 비교 분석 리포트." },
+        { t: "다이렉트 운전자보험", u: "https://bohumofdriverf.withusdone.com", d: "거품은 빼고 보장은 꽉 채웠다! 설계사 수수료 없이 가볍게 시작하는 다이렉트." },
+        { t: "운전자보험이란", u: "https://bohumofdriverg.withusdone.com", d: "아직도 헷갈리시나요? 운전자라면 반드시 알아야 할 생존 보험의 기초 지식." },
+        { t: "운전자보험 자동차보험 차이", u: "https://bohumofdriverh.withusdone.com", d: "민사와 형사의 경계선! 당신의 완벽한 안전을 완성하는 마지막 퍼즐 조각입니다." },
+        { t: "운전자보험 자동차보험", u: "https://bohumofdriveri.withusdone.com", d: "환상의 짝꿍! 두 보험의 시너지로 도로 위 어떤 상황도 두렵지 않습니다." },
+        { t: "운전자보험 가격", u: "https://bohumofdriverj.withusdone.com", d: "커피 몇 잔 값으로 누리는 평화. 합리적인 가격의 기준을 제시합니다." },
+        { t: "운전자보험 자부상", u: "https://bohumofdriverk.withusdone.com", d: "가벼운 접촉사고에도 든든하게! 부상 등급별 치료비의 모든 것을 공개합니다." },
+        { t: "운전자보험필수", u: "https://bohumofdriverl.withusdone.com", d: "나만 조심한다고 될까요? 예기치 못한 사고에 대비하는 가장 현명한 방법." },
+        { t: "운전자보험 자기부담금", u: "https://bohumofdriverm.withusdone.com", d: "놓치기 쉬운 디테일까지 완벽하게. 내 돈 한 푼 안 나가는 철벽 방어 전략." },
+        { t: "운전자보험과 자동차보험", u: "https://bohumofdrivern.withusdone.com", d: "이중 보장의 마법! 중복 없이 효율적으로 가입하는 꿀팁을 전수합니다." },
+        { t: "자동차운전자보험", u: "https://bohumofdrivero.withusdone.com", d: "핸들을 잡는 순간부터 내릴 때까지, 당신의 모든 동선을 책임집니다." },
+        { t: "영업용운전자보험", u: "https://bohumofdriverp.withusdone.com", d: "생업을 지키는 가장 강력한 수단. 베테랑 운전자를 위한 특화 설계를 만나보세요." },
+        { t: "운전자보험 비용", u: "https://bohumofdriverq.withusdone.com", d: "매달 나가는 고정비, 다이어트가 필요하다면? 최적의 가성비 구간을 찾아드립니다." },
+        { t: "운전자보험 변호사선임비용", u: "https://bohumofdriverr.withusdone.com", d: "법적 공방의 든든한 아군! 경찰 조사 단계부터 힘이 되는 변호사 지원 서비스." },
+        { t: "운전병 운전자자동차보험 할인", u: "https://bohumofdrivers.withusdone.com", d: "군 경력도 자산이다! 운전병 출신이라면 반드시 챙겨야 할 황금 같은 할인 혜택." },
+        { t: "운전자보험 싼곳", u: "https://bohumofdrivert.withusdone.com", d: "최저가 사냥꾼들을 위한 성지. 보장은 유지하면서 가격만 쏙 뺀 상품 리스트." },
+        { t: "부부운전자보험", u: "https://bohumofdriveru.withusdone.com", d: "둘이 가입하면 혜택은 두 배! 사랑하는 배우자와 함께 지키는 안전 운전 생활." },
+        { t: "교통사고 운전자보험", u: "https://bohumofdriverv.withusdone.com", d: "사고의 순간, 당신 곁에 누가 있나요? 24시간 당신을 지키는 보이지 않는 손." },
+        { t: "운전자보험 일상생활", u: "https://bohumofdriverw.withusdone.com", d: "운전 중이 아닐 때도 OK! 일상 속 배상책임까지 확장되는 놀라운 커버리지." },
+        { t: "운전자보험 조회", u: "https://bohumofdriverx.withusdone.com", d: "내 보험, 제대로 가입되어 있을까? 클릭 몇 번으로 확인하는 내 보장 현황." },
+        { t: "운전자상해보험", u: "https://bohumofdrivery.withusdone.com", d: "상해 사고는 언제 어디서나 발생할 수 있습니다. 당신의 신체를 위한 철저한 보호막." },
+        { t: "운전자보험 자동차부상치료비", u: "https://bohumofdriverz.withusdone.com", d: "작은 찰과상도 소중하게. 자부치 특약으로 치료비 걱정 없이 회복에만 전념하세요." },
+        { t: "운전자보험료", u: "https://bohumwdrivera.withusdone.com", d: "연령별, 차종별 맞춤형 보험료 계산기. 당신의 적정 보험료를 지금 확인하세요." },
+        { t: "운전보험", u: "https://bohumwdriverb.withusdone.com", d: "심플하지만 강력하다! 핵심 담보만 모아놓은 군더더기 없는 실속형 플랜." },
+        { t: "운전자보험 상해", u: "https://bohumwdriverc.withusdone.com", d: "사고 후유증까지 케어하는 섬세함. 당신의 건강한 내일을 약속합니다." },
+        { t: "운전자보험 가입", u: "https://bohumwdriverd.withusdone.com", d: "오늘 가입하고 내일부터 안심하세요. 스마트폰 하나로 끝내는 3분 가입 프로세스." },
+        { t: "운전자보험 형사합의금", u: "https://bohumwdrivere.withusdone.com", d: "천문학적인 합의금, 혼자 고민하지 마세요. 보험이 당신의 경제적 부담을 나눕니다." },
+        { t: "운전자보험 벌금", u: "https://bohumwdriverf.withusdone.com", d: "민식이법 이후 강화된 벌금 체계, 완벽 대비책이 여기 있습니다." },
+        { t: "운전자보험 중복가입", u: "https://bohumwdriverg.withusdone.com", d: "두 개 가입하면 두 번 받을까? 중복 가입의 오해와 진실을 명쾌하게 풀어드립니다." },
+        { t: "운전자보험 특약", u: "https://bohumwdriverh.withusdone.com", d: "나에게 꼭 필요한 옵션은 무엇? 입맛대로 골라 담는 맞춤형 특약 백과사전." },
+        { t: "운전자보험 변경", u: "https://bohumwdriveri.withusdone.com", d: "기존 보험이 마음에 안 든다면? 위약금 없이 갈아타는 영리한 리모델링 비법." },
+        { t: "운전자보험 음주운전", u: "https://bohumwdriverj.withusdone.com", d: "절대 금물이지만 알아야 할 상식. 보장 범위와 제한 사항에 대한 엄격한 가이드." },
+        { t: "운전자보험 필요성", u: "https://bohumwdriverk.withusdone.com", d: "사고는 예고 없이 찾아옵니다. 왜 지금 가입해야 하는지 그 결정적 이유 5가지." },
+        { t: "다이렉트 운전자보험 비교", u: "https://bohumwdriverl.withusdone.com", d: "손가락 하나로 끝내는 메이저 보험사 비교. 시간은 아끼고 보장은 높이세요." },
+        { t: "운전자보험 만기", u: "https://bohumwdriverm.withusdone.com", d: "끝날 때까지 끝난 게 아니다! 만기 시 챙겨야 할 혜택과 재가입 요령." },
+        { t: "운전자보험 보장", u: "https://bohumwdrivern.withusdone.com", d: "어떤 사고도 빈틈없이! 당신을 지켜주는 촘촘한 보장 그물을 확인하세요." },
+        { t: "운전자보험 확인", u: "https://bohumwdrivero.withusdone.com", d: "숨어있는 내 보험금 찾기! 가입 내역을 꼼꼼히 점검해 드립니다." },
+        { t: "운전자보험 갱신", u: "https://bohumwdriverp.withusdone.com", d: "갱신 시점마다 오르는 보험료가 걱정이라면? 비갱신형과의 비교 분석을 추천합니다." },
+        { t: "운전자보험 위로금", u: "https://bohumwdriverq.withusdone.com", d: "마음까지 어루만지는 보상. 사고 시 지급되는 위로금으로 안정을 찾으세요." },
+        { t: "운전자보험 금액", u: "https://bohumwdriverr.withusdone.com", d: "단돈 만 원의 행복? 금액대별 보장 수준의 차이를 적나라하게 보여드립니다." },
+        { t: "운전자보험 대물", u: "https://bohumwdrivers.withusdone.com", d: "비싼 외제차 사고도 두렵지 않다! 대물 벌금 보장으로 경제적 파산을 막으세요." },
+        { t: "운전자보험 만기환급", u: "https://bohumwdrivert.withusdone.com", d: "보장은 챙기고 돈은 돌려받고! 저축처럼 활용하는 똑똑한 환급형 상품 가이드." },
+        { t: "운전자보험 기간", u: "https://bohumwdriveru.withusdone.com", d: "10년? 20년? 아니면 100세까지? 당신의 라이프 사이클에 딱 맞는 기간 설정법." },
+        { t: "운전자보험 추가", u: "https://bohumwdriverv.withusdone.com", d: "부족한 보장만 쏙쏙 골라 담기. 기존 보험에 강력한 화력을 더해보세요." },
+        { t: "운전자보험 나이", u: "https://bohumwdriverw.withusdone.com", d: "20대부터 70대까지, 연령별 위험 요소에 최적화된 맞춤 플랜 제공." },
+        { t: "운전자보험 동승자", u: "https://bohumwdriverx.withusdone.com", d: "혼자가 아니기에 더 신중해야 합니다. 함께 탄 소중한 사람까지 지켜주는 보장." },
+        { t: "음주운전운전자보험 사고보상", u: "https://bohumwdrivery.withusdone.com", d: "경각심을 일깨우는 보상 제한 규정. 법률 개정에 따른 최신 정보를 확인하세요." },
+        { t: "가족운전자보험", u: "https://bohumwdriverz.withusdone.com", d: "우리 가족 안전 통합 관리! 가족 모두가 혜택받는 경제적인 패키지 상품." },
+        { t: "운전자보험 자차", u: "https://bohumxdrivera.withusdone.com", d: "내 차 수리비 걱정 끝! 자동차보험의 사각지대를 메워주는 서포트 담보." },
+        { t: "운전자보험 비갱신", u: "https://bohumxdriverb.withusdone.com", d: "한번 가입으로 평생 보험료 동결! 미래의 불확실성을 제거하는 가장 확실한 선택." },
+        { t: "운전자보험 혜택", u: "https://bohumxdriverc.withusdone.com", d: "보험 그 이상의 서비스. 무료 세차권부터 긴급출동까지 숨은 혜택을 찾아보세요." },
+        { t: "운전자보험 80세만기", u: "https://bohumxdriverd.withusdone.com", d: "실버 운전자 시대를 대비하는 자세. 노후 운전도 걱정 없는 장기 보장 플랜." },
+        { t: "운전자보험 화재보험", u: "https://bohumxdrivere.withusdone.com", d: "도로 위 안전과 내 집 안전을 동시에! 결합 가입으로 보험료는 낮추고 보장은 넓히고." },
+        { t: "초보운전보험료", u: "https://bohumxdriverf.withusdone.com", d: "설레는 첫 운전, 하지만 사고 위험은 최고? 초보자만을 위한 저렴한 특공대 보험." },
+        { t: "운전자보험 가격비교 사이트", u: "https://bohumxdriverg.withusdone.com", d: "대한민국 모든 가격 데이터를 모았다! 손해 보지 않는 가입의 정석." },
+        { t: "운전자보험 중복", u: "https://bohumxdriverh.withusdone.com", d: "과유불급! 불필요한 중복 가입을 막아 당신의 소중한 보험료를 아껴드립니다." },
+        { t: "20대운전자보험", u: "https://bohumxdriveri.withusdone.com", d: "혈기 왕성한 20대, 보험료는 부담스럽다면? 청춘들을 위한 맞춤 다이어트 설계." },
+        { t: "누구나운전보험", u: "https://bohumxdriverj.withusdone.com", d: "누가 운전해도 걱정 뚝! 차량 중심이 아닌 사람 중심의 광범위 보장 서비스." },
+        { t: "운전자보험 갱신형", u: "https://bohumxdriverk.withusdone.com", d: "초기 비용 부담을 확 낮췄다! 당장의 지갑 사정을 고려한 실속파의 선택." },
+        { t: "운전자보험 환급형", u: "https://bohumxdriverl.withusdone.com", d: "사고 안 나면 꽝이라고요? 낸 돈 그대로 돌려받는 저축형 모델의 매력." },
+        { t: "운전자보험 합의금", u: "https://bohumxdriverm.withusdone.com", d: "피해자와의 원만한 합의를 돕는 마중물. 형사적 위기를 기회로 바꾸는 힘." },
+        { t: "운전자보험 환급금", u: "https://bohumxdrivern.withusdone.com", d: "중간에 해지하면 얼마를 받을까? 예상 환급금 시뮬레이션으로 자금 계획을 세우세요." },
+        { t: "운전자보험 견적", u: "https://bohumxdrivero.withusdone.com", d: "복잡한 정보 입력은 생략한다! 전화번호 하나로 끝내는 초고속 견적 서비스." },
+        { t: "운전자보험 자부치", u: "https://bohumxdriverp.withusdone.com", d: "운전자들이 가장 사랑하는 특약 1순위! 부상 등급의 비밀을 파헤칩니다." },
+        { t: "운전자보험 실비", u: "https://bohumxdriverq.withusdone.com", d: "실손의료비와의 찰떡궁합. 중복 보장이 가능한 영역을 전략적으로 공략하세요." },
+        { t: "운전자보험 영업용", u: "https://bohumxdriverr.withusdone.com", d: "택시, 화물, 배달 운전자를 위한 철갑 방패. 사고가 곧 수입 중단인 분들을 위해." },
+        { t: "운전자보험료 비교 계산 실시간 무료 상담 사이트", u: "https://bohumxdrivers.withusdone.com", d: "전문가와 1:1 채팅으로 고민 해결! 나만을 위한 맞춤 보험 컨설팅을 경험하세요." }
+    ];
+
+    const categories = [
+        "🔥 긴급 구조! 사고 처리 핵심팩",
+        "💰 한 푼이라도 아끼는 가격 비교",
+        "🏥 뼈와 근육까지 지켜주는 상해 케어",
+        "⚖️ 법적 분쟁 완전 타파 (변호사/벌금)",
+        "🚀 다이렉트 & 고속 가입 채널",
+        "👨‍👩‍👧‍👦 가족 & 부부 통합 안심 플랜",
+        "💎 환급 & 재테크형 스마트 플랜"
+    ];
+
+    function shuffle(array) {
+        return array.sort(() => Math.random() - 0.5);
+    }
+
+    function generateContent() {
+        const grid = document.getElementById('content-grid');
+        const shuffledLinks = shuffle([...rawData]).slice(0, 75); // 약 75개 무작위
+        const shuffledCats = shuffle([...categories]);
+
+        shuffledCats.forEach((cat, idx) => {
+            const sectionLinks = shuffledLinks.splice(0, Math.floor(Math.random() * 4) + 5); // 5~8개
+            if (sectionLinks.length === 0) return;
+
+            const card = document.createElement('div');
+            card.className = `category-card cat-${(idx % 7) + 1}`;
+            
+            let html = `<div class="category-title">${cat}</div><ul class="link-list">`;
+            
+            sectionLinks.forEach(link => {
+                html += `
+                    <li class="link-item">
+                        <a href="${link.u}" target="_blank" title="${link.t}">
+                            <span class="title">${link.t}</span>
+                            <span class="desc">${link.d}</span>
+                        </a>
+                    </li>`;
+            });
+
+            html += `</ul>`;
+            card.innerHTML = html;
+            grid.appendChild(card);
+        });
+    }
+
+    window.onload = generateContent;
+</script>
+
+</body>
 </html>
